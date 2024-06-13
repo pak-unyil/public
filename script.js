@@ -535,12 +535,12 @@ let woo = {
 // util
 
 function show(el){
-  gsap.from(el.querySelectorAll('[stagger]'), { opacity:0, x:0, y:50, stagger:.2 })
+  gsap.from(el.querySelectorAll('[data-stagger]'), { opacity:0, x:0, y:50, stagger:.2 })
   el.classList.remove('invisible')
 }
 
 function showFast(el){
-  gsap.from(el.querySelectorAll('[stagger]'), { opacity:0, x:0, y:50, stagger:.05 })
+  gsap.from(el.querySelectorAll('[data-stagger]'), { opacity:0, x:0, y:50, stagger:.05 })
   el.classList.remove('invisible')
 }
 
